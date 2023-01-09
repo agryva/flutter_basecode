@@ -5,7 +5,7 @@ import 'package:base_code_flutter/utils/ExceptionsCustom.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 
-class MasterRepository extends RepositoryImpl with DioMaster {
+class RemoteRepository extends RepositoryImpl with DioMaster {
   @override
   Future<ResponseRepositoryBody> getRepositoriesData(int page, String search) async {
     try {
